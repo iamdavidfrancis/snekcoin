@@ -83,8 +83,8 @@ The original block reward schedule, with one-minute block targets and four-hour 
   - [Windows Build Notes](doc/build-msw.md)
 
 ### Such ports
-RPC 22555
-P2P 22556
+RPC 55883
+P2P 55884
 
 ![](http://sneksay.com/wow//////such/coin)
 
