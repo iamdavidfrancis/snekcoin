@@ -1,0 +1,27 @@
+# /etc/conf.d/snekcoind: config file for /etc/init.d/snekcoind
+
+# Config file location
+#DOGECOIND_CONFIGFILE="/etc/snekcoin/snekcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $DOGECOIND_USER)
+#DOGECOIND_PIDDIR="/var/run/snekcoind"
+
+# What filename to give the pidfile
+#DOGECOIND_PIDFILE="${DOGECOIND_PIDDIR}/snekcoind.pid"
+
+# Where to write snekcoind data (be mindful that the blockchain is large)
+#DOGECOIND_DATADIR="/var/lib/snekcoind"
+
+# User and group to own snekcoind process
+#DOGECOIND_USER="snekcoin"
+#DOGECOIND_GROUP="snekcoin"
+
+# Path to snekcoind executable
+#DOGECOIND_BIN="/usr/bin/snekcoind"
+
+# Nice value to run snekcoind under
+#DOGECOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+DOGECOIND_OPTS="-disablewallet"
+

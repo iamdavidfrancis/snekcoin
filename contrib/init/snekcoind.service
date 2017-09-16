@@ -1,0 +1,22 @@
+[Unit]
+Description=Snekcoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=snekcoin
+Group=snekcoin
+
+Type=forking
+PIDFile=/var/lib/snekcoind/snekcoind.pid
+ExecStart=/usr/bin/snekcoind -daemon -pid=/var/lib/snekcoind/snekcoind.pid \
+-conf=/etc/snekcoin/snekcoin.conf -datadir=/var/lib/snekcoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
