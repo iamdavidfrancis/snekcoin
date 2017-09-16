@@ -1,0 +1,3 @@
+# Snekcoin
+
+TODO: Make this
