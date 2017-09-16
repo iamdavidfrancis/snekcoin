@@ -1,9 +1,5 @@
-// Copyright (c) 2011-2013 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#ifndef BITCOIN_QT_QVALUECOMBOBOX_H
-#define BITCOIN_QT_QVALUECOMBOBOX_H
+#ifndef QVALUECOMBOBOX_H
+#define QVALUECOMBOBOX_H
 
 #include <QComboBox>
 #include <QVariant>
@@ -12,9 +8,7 @@
 class QValueComboBox : public QComboBox
 {
     Q_OBJECT
-
     Q_PROPERTY(QVariant value READ value WRITE setValue NOTIFY valueChanged USER true)
-
 public:
     explicit QValueComboBox(QWidget *parent = 0);
 
@@ -27,6 +21,8 @@ public:
 signals:
     void valueChanged();
 
+public slots:
+
 private:
     int role;
 
@@ -34,4 +30,4 @@ private slots:
     void handleSelectionChanged(int idx);
 };
 
-#endif // BITCOIN_QT_QVALUECOMBOBOX_H
+#endif // QVALUECOMBOBOX_H
