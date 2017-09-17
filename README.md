@@ -1,7 +1,4 @@
-SnekCoin (FOO)
+SnekCoin (SNEK)
 ===========
 
-[![Build Status](https://travis-ci.org/RazorLove/snekcoin.png?branch=master)](https://travis-ci.org/RazorLove/snekcoin)
-
-
-Scrypt Hashcash PoW Template
+A cryptocurrency I've been working on with some friends. Build instructions can be found in the doc folder
