@@ -7,18 +7,18 @@ CONFIG += no_include_pwd
 
 # UNCOMMENT THIS SECTION TO BUILD ON WINDOWS
 
-windows:LIBS += -lshlwapi
-LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
-LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
-windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
-LIBS += -lboost_system-mgw44-mt-sd-1_53 -lboost_filesystem-mgw44-mt-sd-1_53 -lboost_program_options-mgw44-mt-sd-1_53 -lboost_thread-mgw44-mt-sd-1_53
-BOOST_LIB_SUFFIX=-mgw44-mt-sd-1_53
-BOOST_INCLUDE_PATH=D:/deps/boost
-BOOST_LIB_PATH=D:/deps/boost/stage/lib
-BDB_INCLUDE_PATH=d:/deps/db/build_unix
-BDB_LIB_PATH=d:/deps/db/build_unix
-OPENSSL_INCLUDE_PATH=d:/deps/ssl/include
-OPENSSL_LIB_PATH=d:/deps/ssl
+#windows:LIBS += -lshlwapi
+#LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
+#LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
+#windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
+#LIBS += -lboost_system-mgw44-mt-sd-1_53 -lboost_filesystem-mgw44-mt-sd-1_53 -#lboost_program_options-mgw44-mt-sd-1_53 -lboost_thread-mgw44-mt-sd-1_53
+#BOOST_LIB_SUFFIX=-mgw44-mt-sd-1_53
+#BOOST_INCLUDE_PATH=D:/deps/boost
+#BOOST_LIB_PATH=D:/deps/boost/stage/lib
+#BDB_INCLUDE_PATH=d:/deps/db/build_unix
+#BDB_LIB_PATH=d:/deps/db/build_unix
+#OPENSSL_INCLUDE_PATH=d:/deps/ssl/include
+#OPENSSL_LIB_PATH=d:/deps/ssl
 
 OBJECTS_DIR = build
 MOC_DIR = build
